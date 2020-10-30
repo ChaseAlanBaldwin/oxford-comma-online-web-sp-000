@@ -7,5 +7,7 @@ def oxford_comma(array)
   end
   if array.length === 3
     x = 2 
+    array.pop()
+    array.join(", ")
   end
 end
