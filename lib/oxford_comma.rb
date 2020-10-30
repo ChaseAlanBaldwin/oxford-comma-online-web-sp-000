@@ -11,4 +11,10 @@ def oxford_comma(array)
     array << addAnd
     return array.join(", ")
   end
+  if array.length > 3
+    addAnd = "and " + array[array.length - 1]
+    array.pop()
+    array << addAnd
+    return array.join(", ")
+  end
 end
